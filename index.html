@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="bn">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> ভূমি উন্নয়ন কর:
-            Dakhila</title>
+        Dakhila</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <style>
         /* Use Noto Sans Bengali for all text */
         body {
             font-family: 'Noto Sans Bengali', sans-serif;
             background-color: #f3f4f6;
         }
+
         /* Styling for the receipt container to mimic a paper document */
         .receipt-container {
-            max-width: 768px; /* Standard receipt/A4 width approximation */
+            max-width: 768px;
+            /* Standard receipt/A4 width approximation */
             margin: 2rem auto;
             background-color: white;
             border: 1px solid #e5e7eb;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
             padding: 1.5rem;
         }
+
         .table-header-cell {
             padding: 0.5rem;
             font-weight: 700;
             border-bottom: 1px solid #000;
         }
+
         .table-cell {
             padding: 0.5rem;
         }
+
         .section-title {
             font-weight: 700;
             border: 1px solid #000;
@@ -37,11 +44,13 @@
             background-color: #f0f0f0;
             text-align: center;
         }
+
         /* Print-friendly styling */
         @media print {
             body {
                 background-color: white;
             }
+
             .receipt-container {
                 margin: 0;
                 border: none;
@@ -50,27 +59,23 @@
         }
     </style>
 </head>
-<body class="p-4 sm:p-6">
 
-    <div class="receipt-container rounded-lg">
+<!-- <body class="p-4 sm:p-6 bg-[#d7f2c9]"> -->
 
-        <!-- Header Section -->
-        <header class="text-center mb-6 border-b border-gray-400 pb-4">
-            <div class="flex justify-between">    
-            <p class="text-sm text-left">বাংলাদেশ ফরম নং ১০৭৭ <br> (সংশোধিত)</p>
-            <p class="text-sm text-right">(পরিশিষ্ট: ৩৮) <br>ক্রমিক নং 333225085018</p>
-            </div>
-            <h1 class="text-sm  mt-1 text-gray-800">ভূমি উন্নয়ন কর পরিশোধ রসিদ</h1>
-            <p class="text-xs text-gray-600">(অনুচ্ছেদ ৩৯২ দ্রষ্টব্য)</p>
-        </header>
+    <body class="p-4 sm:p-2 receipt-container rounded-lg border-dotted border-1 border-gray-800">
 
-        <!-- Receipt Metadata and Office Info -->
-        <div class="space-y-4 text-sm mb-6">
-            <!-- Top Row Metadata -->
-            <div class="flex justify-between border-b border-dotted pb-2">
-                <p><strong>(পরিশিষ্ট: ৩৮)</strong></p>
-                <p><strong>ক্রমিক নং:</strong> ৩৩৩২২৫০৮৫০১৮</p>
-            </div>
+        <div>
+            <!-- Header Section -->
+            <header class="text-center mb-6 border-b border-gray-400 pb-4">
+                <div class="flex justify-between">
+                    <p class="text-sm text-left">বাংলাদেশ ফরম নং ১০৭৭ <br> (সংশোধিত)</p>
+                    <p class="text-sm text-right">(পরিশিষ্ট: ৩৮) <br>ক্রমিক নং 333225085018</p>
+                </div>
+                <h1 class="text-sm  mt-1 text-gray-800">ভূমি উন্নয়ন কর পরিশোধ রসিদ</h1>
+                <p class="text-xs text-gray-600">(অনুচ্ছেদ ৩৯২ দ্রষ্টব্য)</p>
+            </header>
+
+
 
             <!-- Office Location -->
             <div class="grid grid-cols-2 md:grid-cols-3 gap-x-4 border border-gray-400 p-2 text-center">
@@ -107,7 +112,7 @@
 
         <!-- Owner and Land Details -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-            
+
             <!-- Owner Details -->
             <div class="md:col-span-1 border border-gray-500 rounded-sm overflow-hidden">
                 <div class="section-title bg-gray-200 border-b-0">মালিকের বিবরণ</div>
@@ -150,7 +155,8 @@
                         </tr>
                         <!-- Total Row -->
                         <tr class="border-t border-gray-500 font-bold bg-gray-50">
-                            <td class="table-cell border-r border-gray-500 text-right" colspan="3">সর্বমোট জমি (শতাংশ)</td>
+                            <td class="table-cell border-r border-gray-500 text-right" colspan="3">সর্বমোট জমি (শতাংশ)
+                            </td>
                             <td class="table-cell">১৭.৫</td>
                         </tr>
                     </tbody>
@@ -210,7 +216,8 @@
             </div>
         </div>
 
-    </div>
+        </div>
 
-</body>
+    </body>
+
 </html>
